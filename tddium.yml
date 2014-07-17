@@ -1,4 +1,4 @@
 :tddium:
   :test_pattern: 'none'
   :tests:
-    - 'test 0'
+    - 'test'
