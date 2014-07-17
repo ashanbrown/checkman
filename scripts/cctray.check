@@ -11,8 +11,8 @@ class CCTrayMultiProjectStatus
 
   def as_json(*)
     {
-      result:   @projects.all? { |p| p.attr('lastBuildStatus') == "Success" },
-      changing: @projects.any? { |p| p.attr('activity')        == "Building" },
+      result   => @projects.all? { |p| p.attr('lastBuildStatus') == "Success" },
+      changing => @projects.any? { |p| p.attr('activity')        == "Building" },
     }
   end
 
